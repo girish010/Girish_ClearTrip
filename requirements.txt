@@ -1,0 +1,12 @@
+
+ PYTHON PACKAGE REQUIREMENTS:
+_____________________________
+REQUIRES: Python >= 3.8
+SPECIFIC DEPENDENCIES:
+	behave  -- BDD test framework, cucumber-clone for Python.
+	selenium -- To drive the browser tests
+   	PyHamcrest -- For assertions: assert_that(expected, equal_to(actual))
+   	PyYAML -- For working with yaml files
+
+______________________________
+

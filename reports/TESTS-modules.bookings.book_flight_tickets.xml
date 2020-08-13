@@ -1,0 +1,26 @@
+<testsuite name="modules.bookings.book_flight_tickets.Verify flight ticket booking" tests="1" errors="0" failures="0" skipped="0" time="0.0" timestamp="2020-08-12T20:09:48.222017" hostname="Girish"><testcase classname="modules.bookings.book_flight_tickets.Verify flight ticket booking" name="Book a roundtrip ticket" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @smoke @flight-booking @id-xxxx
+  Scenario: Book a roundtrip ticket
+    Given I am logged in to cleartrip as an user ... untested in 0.000s
+    When I search for a flight with below details ... untested in 0.000s
+      | origin | destination | departure_date | return_date |
+      | BLR    | BBI         | 19-1-2017      | 21-1-2017   |
+    And I proceed with the booking ... untested in 0.000s
+      """
+      Select the default flight choosen by cleartrip
+      """
+    And I select trip insurance ... untested in 0.000s
+    And I accept terms and conditions ... untested in 0.000s
+    When I continue with the booking ... untested in 0.000s
+    And I add traveller with below details ... untested in 0.000s
+      | title | first_name | last_name | mobile_no  |
+      | Mr    | pradeepta  | swain     | 9741987623 |
+    Then I should be presented with payment section ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
